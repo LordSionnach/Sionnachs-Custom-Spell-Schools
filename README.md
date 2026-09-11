@@ -1,3 +1,5 @@
+Manifest Link: https://github.com/LordSionnach/Sionnachs-Custom-Spell-Schools/releases/download/v2.3.0/module.json
+
 # IMPORTANT NOTE
 This module is created using ChatGPT completely. I played no part in its creation, as I suck at coding, having never learned. This was created for my own custom game, but I figured others get use out of it. That is all.
 
