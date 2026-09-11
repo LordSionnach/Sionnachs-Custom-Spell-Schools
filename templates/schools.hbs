@@ -1,0 +1,42 @@
+<section>
+  <p>Add, rename, or remove the spell schools available in this world. Changes save when you click Save or Remove.</p>
+  <div class="school-list">
+    <table>
+      <thead><tr><th scope="col">Spell School</th><th scope="col">Icon</th><th scope="col">Actions</th></tr></thead>
+      <tbody>
+        {{#each rows}}
+        <tr data-school-id="{{id}}">
+          <td>
+            {{#if editing}}
+            <input type="text" data-field="name" aria-label="Spell school name" value="{{name}}" placeholder="Spell school name" {{#if ../busy}}disabled{{/if}}>
+            {{else}}{{name}}{{/if}}
+          </td>
+          <td>
+            <div class="school-icon-controls">
+              <img class="school-icon-preview" src="{{icon}}" alt="{{name}} icon">
+              {{#if editing}}
+              <div class="school-icon-fields">
+                <input type="text" data-field="icon" aria-label="Spell school icon path" value="{{icon}}" placeholder="Image path or URL" {{#if ../busy}}disabled{{/if}}>
+                <button type="button" data-action="browse" {{#if ../busy}}disabled{{/if}}><i class="fa-solid fa-image" aria-hidden="true"></i> Choose Image</button>
+              </div>
+              {{/if}}
+            </div>
+          </td>
+          <td class="school-actions">
+            {{#if editing}}
+            <button type="button" data-action="save" {{#if ../busy}}disabled{{/if}}>Save</button>
+            <button type="button" data-action="cancel" {{#if ../busy}}disabled{{/if}}>Cancel</button>
+            {{else}}
+            <button type="button" data-action="edit" aria-label="Edit {{name}}" {{#if editDisabled}}disabled{{/if}}>Edit</button>
+            <button type="button" data-action="remove" aria-label="Remove {{name}}" {{#if removeDisabled}}disabled title="At least one spell school must remain."{{/if}}>Remove</button>
+            {{/if}}
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+  <button type="button" data-action="add" {{#if addDisabled}}disabled{{/if}}><i class="fa-solid fa-plus" aria-hidden="true"></i> Add New</button>
+  <p class="hint">At least one spell school must remain. After removing a school, reassign any spells that used it in their Details tab.</p>
+  <p class="hint">Choose an image or paste its path when adding or editing a school. Transparent SVG icons work best with the spell sheet's tinted school symbols. Clear the path to use the default icon.</p>
+</section>

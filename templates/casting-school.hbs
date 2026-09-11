@@ -1,0 +1,13 @@
+<fieldset class="sionnach-casting-school">
+  <legend>Spell School</legend>
+  <div class="form-group">
+    <label for="{{partId}}-school-choice">Cast as</label>
+    <div class="form-fields">
+      <select id="{{partId}}-school-choice" name="schoolChoice">
+        {{#each schoolOptions}}
+        <option value="{{id}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+        {{/each}}
+      </select>
+    </div>
+  </div>
+</fieldset>

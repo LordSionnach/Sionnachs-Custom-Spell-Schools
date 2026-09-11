@@ -1,0 +1,15 @@
+.sionnach-custom-spell-schools .school-list { max-height: 420px; overflow-y: auto; }
+.sionnach-custom-spell-schools table { width: 100%; margin: 0 0 12px; }
+.sionnach-custom-spell-schools th,
+.sionnach-custom-spell-schools td { padding: 8px 10px; text-align: left; }
+.sionnach-custom-spell-schools th:last-child { width: 180px; }
+.sionnach-custom-spell-schools .school-actions { display: flex; gap: 6px; }
+.sionnach-custom-spell-schools .school-actions button { flex: 1; }
+.sionnach-custom-spell-schools input { width: 100%; }
+.sionnach-custom-spell-schools .school-icon-controls { display: flex; align-items: center; gap: 8px; }
+.sionnach-custom-spell-schools .school-icon-preview { width: 36px; height: 36px; flex: 0 0 36px; object-fit: contain; border: 0; background: #555; border-radius: 4px; padding: 3px; }
+.sionnach-custom-spell-schools .school-icon-fields { display: grid; gap: 4px; min-width: 170px; }
+.sionnach-custom-spell-schools .hint { font-size: var(--font-size-12); opacity: 0.8; }
+.sionnach-school-summary { margin: 4px 0; font-size: var(--font-size-12); overflow-wrap: anywhere; }
+[data-multi-school] .form-fields select { flex: 1; min-width: 0; }
+[data-multi-school] .form-fields input[type="checkbox"] { flex: 0 0 auto; }
