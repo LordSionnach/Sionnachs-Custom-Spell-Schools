@@ -1,6 +1,9 @@
+# IMPORTANT NOTE
+This module is created using ChatGPT completely. I played no part in its creation, as I suck at coding, having never learned. This was created for my own custom game, but I figured others get use out of it. That is all.
+
 # Sionnach's Custom Spell Schools
 
-For Foundry VTT 14.364 and D&D 5e 5.3.3. Version 2.0 replaces Sionnach's Spell Schools and removes its fixed school renames.
+For Foundry VTT 14.364 and D&D 5e 5.3.3.
 
 Enable the module, then open **Configure Settings → Sionnach's Custom Spell Schools → Manage Spell Schools** as a GM.
 
